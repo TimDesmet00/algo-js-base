@@ -39,8 +39,22 @@ let pickLearner = (inputAr, n) => {
       let randomIndex = Math.floor(Math.random() * inputAr.length);
       randomUser.push(inputAr[randomIndex]);
     }
+    return randomUser;
   }
 };
 
-pickLearner(6);
+pickLearner(inputAr, 8);
 console.log(randomUser);
+
+/*
+pour commencer j'ai importé le tableau en modifiant son nom.
+j'ai crée le tableau randomUser vide pour y stocker les informations retourner par la fonction.
+j'ai ensuite déclaré la fonction en flécher avec les arguments inputAr et n.
+après je vérifie que le nombre est bien entre 0 et la longueur du tableau.
+sinon une alerte se produit.
+sinon une boucle for démarre pour produire un nombre random qui servira dans l'index du tableau.
+je push le résultat qui est a l'index aléatoire dans le tableau randomUser.
+je le retourne pour le récupérer en dehors de la fonction.
+j'appelle la fonction avec l'argument du tableau source et le nombre de saisie aléatoire à en sortir.
+je log le résultat dans la console pour le vérifier.
+*/
